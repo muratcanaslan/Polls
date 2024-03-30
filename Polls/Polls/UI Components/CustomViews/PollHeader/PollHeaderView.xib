@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PollHeaderView" customModule="Polls" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="631" height="118"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPK-ZV-SV0">
+                    <rect key="frame" x="20" y="20" width="591" height="78"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="NgU-n0-rnP">
+                            <rect key="frame" x="20" y="16" width="551" height="46"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="jHq-wf-jkM">
+                                    <rect key="frame" x="0.0" y="0.3333333333333357" width="120" height="45.333333333333336"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Active Polls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5w-zO-yeM">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLA-Qn-7bj">
+                                            <rect key="frame" x="0.0" y="26" width="120" height="19.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconRightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="V9B-Wj-r1g">
+                                    <rect key="frame" x="519" y="7" width="32" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="99Z-YF-XWz"/>
+                                        <constraint firstAttribute="width" constant="32" id="TDD-Hu-11G"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="purpleColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="NgU-n0-rnP" secondAttribute="bottom" constant="16" id="CBh-hd-1ee"/>
+                        <constraint firstItem="NgU-n0-rnP" firstAttribute="top" secondItem="ZPK-ZV-SV0" secondAttribute="top" constant="16" id="FID-5m-YaF"/>
+                        <constraint firstAttribute="trailing" secondItem="NgU-n0-rnP" secondAttribute="trailing" constant="20" id="K6g-D1-U0r"/>
+                        <constraint firstItem="NgU-n0-rnP" firstAttribute="leading" secondItem="ZPK-ZV-SV0" secondAttribute="leading" constant="20" id="XFT-1Z-EAJ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ZPK-ZV-SV0" secondAttribute="trailing" constant="20" id="DdH-Ni-egh"/>
+                <constraint firstItem="ZPK-ZV-SV0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="MF6-JG-JhO"/>
+                <constraint firstAttribute="bottom" secondItem="ZPK-ZV-SV0" secondAttribute="bottom" constant="20" id="NKh-De-RsT"/>
+                <constraint firstItem="ZPK-ZV-SV0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="b6g-Yh-s46"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="208.3969465648855" y="-234.85915492957747"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconRightArrow" width="26" height="26"/>
+        <namedColor name="purpleColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

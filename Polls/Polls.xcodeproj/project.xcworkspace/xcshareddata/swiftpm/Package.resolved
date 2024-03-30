@@ -1,0 +1,15 @@
+{
+  "originHash" : "2b87e5ae65e928aacbe9f691e93b15c14afacbd70822fdeed0caac1eb969b37f",
+  "pins" : [
+    {
+      "identity" : "reusable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AliSoftware/Reusable",
+      "state" : {
+        "revision" : "18674709421360e210c2ecd4e8e08b217d4ea61d",
+        "version" : "4.1.2"
+      }
+    }
+  ],
+  "version" : 3
+}
